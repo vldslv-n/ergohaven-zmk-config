@@ -96,13 +96,13 @@
         layers = <1>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_xy_scaler 1 64>,
-            <&zip_xy_to_scroll_mapper &zip_scroll_snap>;
+            <&zip_xy_scaler 1 16>,
+            <&zip_xy_to_scroll_mapper>;
     };
 
     sniper {
         layers = <2>;
-        input-processors = <&zip_xy_scaler 1 12>;
+        input-processors = <&zip_xy_scaler 1 10>;
     };
 
     adjust {
